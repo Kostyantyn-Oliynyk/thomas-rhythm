@@ -154,22 +154,9 @@ blockquote {
 	margin-top: 100px;
 }
 
-/* .header-content{
-	display: inline-block;
-	vertical-align: middle;
-	font-family: 'Dosis', sans-serif;
-} */
-/* .header h1{
-    font-family: 'debbyscript';
-    font-size: 30px;
-    color: #fff;
-	/* margin-top: 300px; */
-	/* text-align: center;
-} */
-
 .inner{
 	background: url('../img/first-project-lp.jpg') no-repeat center/cover;
-	height: calc (100vh - 73px);
+	height: 100vh;
 	font-family: 'Dosis', sans-serif;
 }
 
@@ -257,5 +244,26 @@ blockquote span,
 	font-size: 11px;
 }
 /* ===== Default component end ===== */
-
-
+.about-grid{
+	margin-top: 77px;
+}
+.team-wraper{
+	position: relative;
+	width: 100%;
+	top: 108px;
+}
+.team-item-img{
+	filter: grayscale(1);	
+}
+.team-item .team-item-skills{
+	top: 0;
+	opacity: 0;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	transition: all .2s linear;
+}
+.team-item .team-item-img:hover .team-item-skills{
+	opacity: 1;
+}
+/* ---- About Studio end ---- */
