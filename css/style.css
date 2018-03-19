@@ -211,7 +211,7 @@ blockquote span,
 	text-transform: uppercase;
 	letter-spacing: .2em;
 }
-
+/* ==== button ==== */
 .btn {
 	display: inline-block;
 	padding: 12px 20px;
@@ -243,7 +243,9 @@ blockquote span,
 	padding: 7px 15px;
 	font-size: 11px;
 }
+/* ==== button end ==== */
 /* ===== Default component end ===== */
+/* ===== About Studio */
 .about-grid{
 	margin-top: 77px;
 }
@@ -265,5 +267,33 @@ blockquote span,
 }
 .team-item .team-item-img:hover .team-item-skills{
 	opacity: 1;
+}
+.team-item-info{
+	display: table;
+	width: 100%;
+	/* height: 100%; */
+	text-align: center;
+}
+.team-item-name{
+	display: inline-block;
+	margin-top: 30px;
+	margin-bottom: 16px;
+	font-family: 'Dosis';
+	letter-spacing: 6px;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 400;    
+    color:#777;
+}
+.team-item-role{
+	display: block;
+	margin-top: 0;
+	font-family: 'Dosis';
+	text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.2;
+	color:#777;
+	letter-spacing: 5px;
 }
 /* ---- About Studio end ---- */
