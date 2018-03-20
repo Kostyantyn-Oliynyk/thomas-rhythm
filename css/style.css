@@ -246,6 +246,10 @@ blockquote span,
 /* ==== button end ==== */
 /* ===== Default component end ===== */
 /* ===== About Studio */
+.about{
+	overflow: hidden;
+	border-bottom: 1px solid #ececec;
+}
 .about-grid{
 	margin-top: 77px;
 }
@@ -297,3 +301,36 @@ blockquote span,
 	letter-spacing: 5px;
 }
 /* ---- About Studio end ---- */
+/* ---- Services ---- */
+.service-title{
+	font-weight: 500;
+	font-size: 18px;
+	letter-spacing: 10px;
+	margin-bottom: 122px;
+}
+#tabs .tabs-nav li{
+	float: left;
+	width: 20%;
+	text-align: center;
+	font-family: 'Dosis';
+	color: #a4a4a4;
+}
+#tabs .tabs-nav li span{
+	display: block;
+	font-size: 14px;
+	text-transform: uppercase;
+	margin-bottom: 78px;
+	font-weight: 400;
+	letter-spacing: 7px;
+}
+#tabs .tabs-nav li .icon{
+	font-size: 48px;
+	margin-bottom: 35px;
+}
+#tabs .tabs-nav :focus {
+    outline: 0;
+}
+#tabs .tabs-nav .ui-state-active{
+	color: #111;
+}
+/* ---- Services end ---- */
