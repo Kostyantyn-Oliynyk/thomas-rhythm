@@ -384,6 +384,7 @@ blockquote span,
 /* ---- Portfolio ---- */
 .portfolio{
 	overflow: hidden;
+	padding-bottom: 0;	
 }
 .portfolio-title{
 	font-weight: 500;
@@ -410,10 +411,6 @@ blockquote span,
 	color: #a4a4a4;
 }
 
-.tabs-wrapper{
-	/* position: relative; */
-}
-
 .portfolio-image{
 	filter: grayscale(1);
 }
@@ -426,11 +423,12 @@ blockquote span,
 .portfolio-item{
 	float: left;
 	width: 33.333333%;
-	padding: 0 4px;
+	padding: 4px;
 }
 
 .portfolio-item img{
 	width: 100%;
+	height: 410px;
 }
 
 .portfolio-nav{
@@ -448,13 +446,24 @@ blockquote span,
 	letter-spacing: 6px;
 }
 
-.portfolio-nav:after{
-	
+.portfolio-nav:after{	
 	content: '';
 	width: 100%;
 	display: block;
-	clear: both;
-	
+	clear: both;	
 }
-
 /* ---- Portfolio end ---- */
+/* banner start */
+.banner-button-text{
+	letter-spacing: 4px;
+	padding: 12px 40px;
+	font-size: 14px;
+	font-weight: 200;	
+}
+.banner-button{
+	text-align: center;	
+}
+.banner-button:hover {
+	cursor: pointer;
+	}
+/* / banner end */
