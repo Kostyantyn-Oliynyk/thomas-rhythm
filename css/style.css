@@ -2,6 +2,12 @@
 *{
 	box-sizing: border-box;
 }
+#tabs .tabs-nav :focus {
+    outline: 0;
+}
+#tabs-portfolio .tabs-portfolio-nav :focus {
+    outline: 0;
+}
 body{
 	margin: 0;
 	background-color: #fff;
@@ -70,7 +76,7 @@ blockquote {
 */
 .header{
 	background: transparent;	
-	width: 100vw;
+	width: 100%;
 	position: fixed;
 	font-family: 'Dosis', sans-serif ;
 	z-index: 99;
@@ -103,11 +109,11 @@ blockquote {
 	color: rgba(255, 255, 255, .75);
 	letter-spacing: 5px;
 	text-transform: uppercase;
-	padding: 27px 15px;
+	padding: 27px 0;
 }
 .header .logo{
     float: left;
-	padding: 27px 15px ;
+	padding: 27px 0 ;
 	opacity: .9;
 }
 .header .header-nav li{
@@ -275,7 +281,6 @@ blockquote span,
 .team-item-info{
 	display: table;
 	width: 100%;
-	/* height: 100%; */
 	text-align: center;
 }
 .team-item-name{
@@ -302,6 +307,12 @@ blockquote span,
 }
 /* ---- About Studio end ---- */
 /* ---- Services ---- */
+.services::after{
+	content: '';
+	width: 100%;
+	display: block;
+	clear: both;
+}
 .service-title{
 	font-weight: 500;
 	font-size: 18px;
@@ -327,10 +338,123 @@ blockquote span,
 	font-size: 48px;
 	margin-bottom: 35px;
 }
-#tabs .tabs-nav :focus {
-    outline: 0;
-}
+
 #tabs .tabs-nav .ui-state-active{
 	color: #111;
 }
 /* ---- Services end ---- */
+/* ---- Smal section */
+.exclusive-services::after{
+	content: '';
+	width: 100%;
+	display: block;
+	clear: both;
+}
+.exclusive-services-title{
+	font-weight: 300;
+	letter-spacing: 5px;
+	margin-top: 70px;
+}
+.exclusive-services-text{
+	color: rgba(255, 255, 255, .7);
+	font-family: 'Open sans';
+	font-size: 15px;
+	letter-spacing: normal;
+	display: block;
+	line-height: 26px;
+	float: left;
+	margin:28px 0 40px 0 ;
+}
+.exclusive-services-text span{
+	display: block;
+}
+.image-section{
+	float: right;
+	margin-top: -102px;
+}
+.button-style{
+	width: 169px;
+	text-align: center;
+	letter-spacing: 4px;
+}
+.button-style:hover {
+	cursor: pointer;
+	}
+/* ---- Smal section end */
+/* ---- Portfolio ---- */
+.portfolio{
+	overflow: hidden;
+}
+.portfolio-title{
+	font-weight: 500;
+	font-size: 18px;
+	letter-spacing: 10px;
+	margin-bottom: 80px;
+} 
+
+.portfolio-top-text{
+	font-size: 15px;
+	line-height: 26px;
+	padding: 0 209px;
+	text-align: center;
+	color: #777;
+}
+.tabs-portfolio-nav .tab-name:hover{
+	color: #000;
+}
+#tabs-portfolio .tabs-portfolio-nav li{
+	float: left;
+	width: 13%;
+	text-align: center;
+	font-family: 'Dosis';
+	color: #a4a4a4;
+}
+
+.tabs-wrapper{
+	/* position: relative; */
+}
+
+.portfolio-image{
+	filter: grayscale(1);
+}
+
+.portfolio-image:hover{
+	filter: grayscale(0);
+	transition: all .2s linear;
+}
+
+.portfolio-item{
+	float: left;
+	width: 33.333333%;
+	padding: 0 4px;
+}
+
+.portfolio-item img{
+	width: 100%;
+}
+
+.portfolio-nav{
+	text-align: center;
+	padding: 85px 0 51px 0;
+}
+
+.tabs-portfolio-nav{
+	position: relative;
+	left: 21em;
+	font-family: 'Dosis';
+	font-size: 13px;
+	font-weight: 400;
+	text-transform: uppercase;
+	letter-spacing: 6px;
+}
+
+.portfolio-nav:after{
+	
+	content: '';
+	width: 100%;
+	display: block;
+	clear: both;
+	
+}
+
+/* ---- Portfolio end ---- */
