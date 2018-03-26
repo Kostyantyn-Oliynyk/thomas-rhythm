@@ -455,10 +455,12 @@ blockquote span,
 /* ---- Portfolio end ---- */
 /* banner start */
 .banner-button-text{
-	letter-spacing: 4px;
-	padding: 12px 40px;
+	font-family: 'Open sans';
+	letter-spacing: 3px;
+	padding: 12px 10px;
 	font-size: 14px;
 	font-weight: 200;	
+
 }
 .banner-button{
 	text-align: center;	
@@ -467,3 +469,77 @@ blockquote span,
 	cursor: pointer;
 	}
 /* / banner end */
+/* ==== why choose us start=====*/
+.why-choose-us{
+	/* padding-bottom: 0px;	 */
+}
+.benefits-item{
+	text-align: center;
+}
+.benefits-item-title{
+	font-family: 'Dosis';
+	font-size: 14px;
+	text-transform: uppercase;
+	font-weight: 400;
+	letter-spacing: 4px;
+	padding: 35px 0;
+	letter-spacing: 6px;
+}
+.benefits-item-text{
+	line-height: 26px;
+    text-align: justify;
+    font-family: 'Open sans';
+    font-weight: 200;
+    font-size: 14px;
+	color: #777;
+}
+.why-choose-us .row::after{
+	content: '';
+	width: 100%;
+	display: block;
+	clear: both;
+	margin-bottom: 83px;
+}
+/* ==== why choose us end ====*/
+
+/* ==== All news start ====*/
+.latest-news .section-title{
+	float: left;
+}
+.all-news{
+	text-transform: uppercase;
+	color: #999;
+	font-size: 11px;
+	letter-spacing: 5px;
+	float: right;
+	vertical-align: middle;
+}
+.news-image{
+	filter: grayscale(1);
+	margin-bottom: 30px;
+}
+.news-image:hover{
+	filter: grayscale(0);
+	transition: all .2s linear;
+}
+.news-title{
+	font-size: 15px;
+	text-transform: uppercase;
+	font-weight: 200;
+	color: #777;
+	font-family: 'Dosis';
+	letter-spacing: 3px;
+}
+.news-text p{
+	text-align: justify;
+	width: 100%;
+	display: inline-block;
+}
+.news-name-date{
+	font-family: 'Dosis';
+	text-transform: uppercase;
+	font-size: 11px;
+	padding: 17px 0 27px 0;
+	letter-spacing: 5px;
+}
+/* ==== All news end ====*/
