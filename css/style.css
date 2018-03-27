@@ -503,6 +503,9 @@ blockquote span,
 /* ==== why choose us end ====*/
 
 /* ==== All news start ====*/
+.latest-news{
+	overflow: hidden;
+}
 .latest-news .section-title{
 	float: left;
 }
