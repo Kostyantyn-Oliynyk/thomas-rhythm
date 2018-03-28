@@ -6,7 +6,6 @@
 	<title>Landing</title>
 		<!-- Google fonts -->
 		<link href="https://fonts.googleapis.com/css?family=Dosis:300,400|Open+Sans:300,400" rel="stylesheet">
-		<!-- jQuery position -->
 		<!-- slik style -->
 		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
 		<!-- Et-line icons -->
@@ -30,11 +29,11 @@
 				</div>
 				<!-- / logo -->
 				<ul class="header-nav">
-					<li><a href="https://www.google.com.ua/">Home</a></li>
-					<li><a href="#about">About</a></li>
-					<li><a href="#services">services</a></li>
-					<li><a href="#works">works </a></li>
-					<li><a href="#">contact </a></li>
+					<li><a href="" data-scroll=".inner">Home</a></li>
+					<li><a href="#about" data-scroll=".about">About</a></li>
+					<li><a href="#services" data-scroll=".services">services</a></li>
+					<li><a href="#works" data-scroll=".work">works </a></li>
+					<li><a href="#" data-scroll=".contact">contact </a></li>
 				</ul>
 				<!-- / header nav -->
 		</div>	
@@ -643,18 +642,59 @@
 			<!-- / container -->
 		</div>
 		<!-- / why-choose-us -->
+		<!-- revievs -->
+		<div class="revievs bg-black">
+			<div class="reviews-carousel">
+				<div>
+					<div class="slide-content text-center">
+						<span class="icon icon-quote"></span>
+						<div class="title section-title-lite title-white">
+							<span>what people say?</span>
+						</div>
+						<p> Phasellus luctus commodo ullamcorper a posuere rhoncus commodo elit. Aenean congue,
+								risus utaliquam dapibus. Thanks!</p>
+						<span class="review-autor">- Jon Doe. Doodle inc. </span>
+					</div>
+					<!-- / slide-content -->
+				</div>
+				<!-- / slide -->
+				<div>
+					<div class="slide-content text-center">
+						<span class="icon icon-quote"></span>
+						<div class="title section-title-lite title-white">
+							<span>what people say?</span>
+						</div>
+						<p> Phasellus luctus commodo ullamcorper a posuere rhoncus commodo elit. Aenean congue,
+								risus utaliquam dapibus. Thanks!</p>
+						<span class="review-autor">- Jon Doe. Doodle inc. </span>
+					</div>
+					<!-- / slide-content -->
+				</div>
+				<!-- / slide -->
+				<div>
+					<div class="slide-content text-center">
+						<span class="icon icon-quote"></span>
+						<div class="title section-title-lite title-white">
+							<span>what people say?</span>
+						</div>
+						<p> Phasellus luctus commodo ullamcorper a posuere rhoncus commodo elit. Aenean congue,
+								risus utaliquam dapibus. Thanks!</p>
+						<span class="review-autor">- Jon Doe. Doodle inc. </span>
+					</div>
+					<!-- / slide-content -->
+				</div>
+				<!-- / slide -->
+			</div>
+		</div>
+		<!-- / revievs -->
 		<div class="default-section latest-news">
 			<div class="container">
-				<div class="title-row">
-					<div class="title section-title">
-						<span>latest news</span>
-					</div>
-					<div class="all-news">
-						<a href="">
-							all News in our blog
-						</a>
-					</div>
-				</div>		
+				<div class="title section-title">
+					<span>latest news</span>
+					<a href="">
+						all News in our blog >
+					</a>
+				</div>	
 				<div class="row">
 					<div class="col col-4">
 						<div class="news-content">
@@ -664,27 +704,31 @@
 								</a>
 							</div>
 							<!-- / news-image -->
-							<div class="news-title">								
-								<span>new web design trends</span>
+							<div class="news-title">	
+								<a href="">
+									<span>new web design trends</span>
+								</a>								
 							</div>
+							<!-- / news-title -->
 							<div class="news-name-date">
 								<span>John Doe | 10 December</span>
 							</div>
+							<!-- / name-date -->
 							<div class="news-text">
 								<span>
 									Maecenas  volutpat, diam enim sagittis quam, id porta quam. Sed id dolor consectetur fermentum nibh volutpat, accumsan purus. 
 								</span>
 							</div>
-							<!-- / news-title -->
+							<!-- / news-text -->
 							<div class="news-button">
-								<div class="btn btn-default">
-									<a href="">
+								<a href="">
+									<div class="btn btn-default">									
 										<span>
 											Read More >
-										</span>
-									</a>									
-								</div>
-								<!-- / btn-defaul -->
+										</span>																		
+									</div>
+									<!-- / btn-defaul -->
+								</a>
 							</div>
 							<!-- / news-button -->
 						</div>
@@ -699,29 +743,33 @@
 								</a>
 							</div>
 							<!-- / news-image -->
-							<div class="news-title">								
-								<span>new web design trends</span>
+							<div class="news-title">
+								<a href="">
+									<span>Minimalistic Design Forever</span>
+								</a>									
 							</div>
+							<!-- / news-title -->
 							<div class="news-name-date">
-								<span>John Doe | 10 December</span>
+								<span>John Doe | 9 December</span>
 							</div>
+							<!-- / name-date -->
 							<div class="news-text">
 								<span>
 									Maecenas  volutpat, diam enim sagittis quam, id porta quam. Sed id dolor consectetur fermentum nibh volutpat, accumsan purus. 								
 								</span>									
 							</div>
-							<!-- / news-title -->
+							<!-- / news-text -->							
 							<div class="news-button">
-								<div class="btn btn-default">
-									<a href="">
+								<a href="">
+									<div class="btn btn-default">										
 										<span>
 											Read More >
-										</span>
-									</a>									
-								</div>
-								<!-- / btn-defaul -->
+										</span>																		
+									</div>
+									<!-- / btn-defaul -->
+								</a>	
 							</div>
-							<!-- / news-button -->
+							<!-- / news-button -->							
 						</div>
 						<!-- / news-content -->
 					</div>
@@ -734,28 +782,31 @@
 								</a>
 							</div>
 							<!-- / news-image -->
-							<div class="news-title">								
-								<span>new web design trends</span>
-							</div>
-							
+							<div class="news-title">
+								<a href="">
+									<span>Hipster’s Style in Web</span>
+								</a>									
+							</div>	
+							<!-- / news-title -->				
 							<div class="news-name-date">
-								<span>John Doe | 10 December</span>
+								<span>John Doe | 7 December</span>
 							</div>
+							<!-- / name-date -->
 							<div class="news-text">
 								<span>
 									Maecenas  volutpat, diam enim sagittis quam, id porta quam. Sed id dolor consectetur fermentum nibh volutpat, accumsan purus. 
 								</span>
 							</div>
-							<!-- / news-title -->
+							<!-- / news-text -->
 							<div class="news-button">
-								<div class="btn btn-default">
-									<a href="">
+								<a href="">
+									<div class="btn btn-default">										
 										<span>
 											Read More >
-										</span>
-									</a>									
-								</div>
-								<!-- / btn-defaul -->
+										</span>																	
+									</div>
+									<!-- / btn-defaul -->
+								</a>	
 							</div>
 							<!-- / news-button -->
 						</div>
@@ -774,6 +825,11 @@
 <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
 <!-- jQueryUI -->
 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<!-- Google map api -->
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBPrqsbBPoarraJzQWOTpZll1LRZDl8Jug&callback=initMap"    async defer></script>
+<!-- show header on scroll -->
+<script src="js/header-scroll.js"></script>
+<script src="js/scroll-to.js"></script>
 <!-- plugins -->
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
 <!-- init plugins -->
@@ -781,3 +837,8 @@
 <!-- jQuery position -->
 </body>
 </html>
+
+<!-- 
+	map google key
+	AIzaSyBPrqsbBPoarraJzQWOTpZll1LRZDl8Jug
+ -->

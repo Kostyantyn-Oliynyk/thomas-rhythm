@@ -40,6 +40,7 @@ button {
 	outline: none;
 	border: none;
 	cursor: pointer;
+	padding: 0;
 }
 blockquote {
 	margin: 0;
@@ -256,6 +257,12 @@ blockquote span,
 	overflow: hidden;
 	border-bottom: 1px solid #ececec;
 }
+/* .about:after{
+	content: '';
+	width: 100%;
+	display: block;
+	clear: both;
+} */
 .about-grid{
 	margin-top: 77px;
 }
@@ -506,16 +513,11 @@ blockquote span,
 .latest-news{
 	overflow: hidden;
 }
-.latest-news .section-title{
-	float: left;
-}
-.all-news{
-	text-transform: uppercase;
+.latest-news .section-title a{
+	float: right;
 	color: #999;
 	font-size: 11px;
 	letter-spacing: 5px;
-	float: right;
-	vertical-align: middle;
 }
 .news-image{
 	filter: grayscale(1);
@@ -545,4 +547,83 @@ blockquote span,
 	padding: 17px 0 27px 0;
 	letter-spacing: 5px;
 }
+.news-button{
+	margin-top: 25px;
+}
 /* ==== All news end ====*/
+/* ===== reviews start ===== */
+.reviews-carousel{
+	padding: 135px 0;
+}
+.slick-dots{
+	position: absolute;
+	width: 100%;	
+	bottom: 30px;
+	text-align: center;
+}
+.slick-dots li{
+	width: 9px;
+	height: 9px;
+	background-color: rgba(255, 255, 255, .75);
+	display: inline-block;
+	margin: 0 5px;
+	border: 1px black solid;
+	border-radius: 50%;
+	cursor: pointer;
+}
+.slick-dots li.slick-active{
+	background-color: black;
+	border-color: rgba(255, 255, 255, .75);
+}
+.slick-dots li button{
+	display: none;
+}
+.slick-arrow{
+	position: absolute;
+	height: 100%;
+	cursor: pointer;
+	top: 0;
+}
+.slick-arrow.slick-prev{
+	left: 0;
+	z-index: 1;		
+}
+.slick-arrow.slick-next{
+	right: 0;	
+}
+.slick-arrow .carousel-button{
+	width: 63px;
+	height: 63px;
+    background-color: #fff;
+	transform: rotate(-45deg);
+	position: absolute;
+	top: 50%;
+	margin-left: -31px;
+	margin-top: -31px;
+}
+.slick-arrow .carousel-button .fa{
+	position: absolute;
+	transform: rotate(45deg);
+	font-size: 11px;
+}
+.slick-arrow.slick-prev .carousel-button .fa{
+	bottom: 14px;
+	right: 17px;
+}
+.slick-arrow.slick-next .carousel-button .fa{
+	left: 16px;
+    top: 17px;
+}
+/* .fa-chevron-left::before{
+	bottom: 11px;
+    content: "\f053";
+    position: absolute;
+    transform: rotate(45deg);
+    right: 14px;
+    font-size: 11px;
+} */
+/* .fa-chevron-right::before{
+	
+} */
+
+/* ===== reviews end ===== */
