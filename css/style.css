@@ -8,6 +8,9 @@
 #tabs-portfolio .tabs-portfolio-nav :focus {
     outline: 0;
 }
+.reviews-carousel:focus{
+	outline: 0;
+}
 body{
 	margin: 0;
 	background-color: #fff;
@@ -555,6 +558,35 @@ blockquote span,
 .reviews-carousel{
 	padding: 135px 0;
 }
+.icon-quote{
+	font-size: 32px;
+	margin-bottom: 23px;
+	color: #fff;
+}
+.slide-content{
+	width: 732px;
+	margin: 0 31%;
+}
+.slide-content .title{
+	letter-spacing: 7px;
+}
+.slide-content p{
+	color: rgba(255, 255, 255, .75);
+	font-size: 18px;
+	line-height: 30px;
+	font-weight: 300;
+	text-align: center;
+	font-family: 'Open sans';
+	margin-top: 44px;
+}
+.slide-content .review-autor{
+	font-size: 11px;
+	text-transform: uppercase;
+	line-height: 38px;
+	color: rgba(255, 255, 255, .30);
+	letter-spacing: 3px;
+	font-weight: 200;
+}
 .slick-dots{
 	position: absolute;
 	width: 100%;	
@@ -614,16 +646,5 @@ blockquote span,
 	left: 16px;
     top: 17px;
 }
-/* .fa-chevron-left::before{
-	bottom: 11px;
-    content: "\f053";
-    position: absolute;
-    transform: rotate(45deg);
-    right: 14px;
-    font-size: 11px;
-} */
-/* .fa-chevron-right::before{
-	
-} */
 
 /* ===== reviews end ===== */
