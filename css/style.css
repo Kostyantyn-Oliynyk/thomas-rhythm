@@ -2,13 +2,7 @@
 *{
 	box-sizing: border-box;
 }
-#tabs .tabs-nav :focus {
-    outline: 0;
-}
-#tabs-portfolio .tabs-portfolio-nav :focus {
-    outline: 0;
-}
-.reviews-carousel:focus{
+*:focus{
 	outline: 0;
 }
 body{
@@ -20,6 +14,12 @@ body{
 h1, h2, h3, h4, h5, h6{
 	margin: 0;
 	font-weight: normal;
+}
+input, 
+textarea,
+button{
+	outline: none;
+	border: none;
 }
 p {
 	margin: 0;
@@ -40,13 +40,14 @@ img {
 	max-width: 100%;
 }
 button {
-	outline: none;
-	border: none;
 	cursor: pointer;
 	padding: 0;
 }
 blockquote {
 	margin: 0;
+}
+textarea{
+	resize: vertical;
 }
 /* ===== Reset end ===== */
 /* ===== Default classes start */
@@ -72,12 +73,48 @@ blockquote {
 .bg-grey {
 	background-color: #f8f8f8;
 }
+.m-auto{
+	float: none !important;
+	margin-left: auto;
+	margin-right: auto;
+}
+.pull-left{
+	float: left;
+}
+.pull-right{
+	float:right;
+}
 /* ===== Default classes end */
+/* ===== Guide section start ===== */
+.guide-section form .form-control + .form-control{
+	margin-top: 10px;
+}
+/* ===== Guide section end ===== */
 /* ===== Default component start ===== */
 /* 
 	Buttons, text, title, section, small-section header, footer,
 	form elements, icons, tabs, blockquote, container 
 */
+.form-control{
+	width: 100%;
+	border: 1px solid #e5e5e5;
+	border-radius: 2px;
+	padding: 0 13px;
+	font-size: 12px;
+	height: 36px;
+	font-style: Cookie;
+	color: #777;
+	font-weight: 400;
+	text-transform: uppercase;
+	letter-spacing: .2em;
+}
+textarea.form-control{
+	min-height: 82px;
+	padding: 13px;
+}
+.form-control:focus{
+	border-color: #111;
+}
 .header{
 	background: transparent;	
 	width: 100%;
@@ -221,6 +258,26 @@ blockquote span,
 	text-transform: uppercase;
 	letter-spacing: .2em;
 }
+.rhomb-icon{
+	display: inline-block;
+	width: 23px;
+	height: 23px;
+	text-align: center;
+	line-height: 23px;
+	border-radius: 2px;
+	font-size: 14px;
+	transform: rotate(45deg);
+}
+.rhomb-icon i{
+	transform: rotate(-45deg)
+}
+.rhomb-icon.black-icon{
+	color: #fff;
+	background-color: #111;
+}
+.form-info .fa{
+	font-size: 12px;
+}
 /* ==== button ==== */
 .btn {
 	display: inline-block;
@@ -229,6 +286,7 @@ blockquote span,
 	font-size: 12px;
 	text-transform: uppercase;
 	font-weight: 400;
+	cursor: pointer;
 }
 
 .btn.btn-default {
@@ -253,6 +311,7 @@ blockquote span,
 	padding: 7px 15px;
 	font-size: 11px;
 }
+
 /* ==== button end ==== */
 /* ===== Default component end ===== */
 /* ===== About Studio */
@@ -557,6 +616,7 @@ blockquote span,
 /* ===== reviews start ===== */
 .reviews-carousel{
 	padding: 135px 0;
+	overflow: hidden;
 }
 .icon-quote{
 	font-size: 32px;
@@ -646,5 +706,82 @@ blockquote span,
 	left: 16px;
     top: 17px;
 }
-
 /* ===== reviews end ===== */
+
+/* ===== stay informed start ===== */
+
+.subscribe form .form-control{
+	max-width: 291px;
+	letter-spacing: 2px;
+}
+.stay-informed .title{
+	font-size: 16px;
+}
+.form-info i{
+	font-size: 12px;
+}
+.form-info span{
+	color: #aaaaaa;
+	font-size: 11px;
+}
+.form-info{
+	margin-top: 19px;
+}
+
+/* ===== stay informed end ===== */
+/* ===== Contact start===== */
+.contacts{
+	overflow: hidden;
+}
+.contacts .section-title-light{
+	letter-spacing: 10px;
+	font-weight: 500;
+	margin-bottom: 98px;
+}
+.contact-title{
+	font-size: 12px;
+	text-transform: uppercase;
+	letter-spacing: 4px;
+	margin-bottom: 13px;
+}
+.contact-items-wrapper{
+	margin-top: 98px;
+	margin-bottom: 80px;
+}
+.contact-items-wrapper::after{
+	content: '';
+	width: 100%;
+	display: block;
+	clear: both;
+}
+.contact-item .contact-item-content{
+	display: inline-block;
+	vertical-align: middle;	
+}
+.contact-item .contact-item-content{
+	margin-left: 15px;
+}
+.contact-item .contact-item-content span{
+	display: block;
+}
+.contact-form {
+	margin-left:-10px;	
+	margin-right: 25px;
+	overflow: hidden;
+}
+.contact-form .form-col{
+	float: left;
+	width: 50%;
+	padding: 0 5px;
+}
+.contact-form .form-control + .form-control{
+	margin-top: 10px;
+}
+.contact-form .form-info{
+	line-height: 26px;
+	margin-top: 20px;
+}
+.contact-form .btn{
+	margin-top: 20px;
+}
+/* ===== Contact end===== */
