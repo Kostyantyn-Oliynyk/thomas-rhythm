@@ -275,6 +275,10 @@ blockquote span,
 	color: #fff;
 	background-color: #111;
 }
+.rhomb-icon.white-icon{
+	color: #000;
+	background-color: #fff;
+}
 .form-info .fa{
 	font-size: 12px;
 }
@@ -539,9 +543,7 @@ blockquote span,
 	}
 /* / banner end */
 /* ==== why choose us start=====*/
-.why-choose-us{
-	/* padding-bottom: 0px;	 */
-}
+
 .benefits-item{
 	text-align: center;
 }
@@ -785,3 +787,39 @@ blockquote span,
 	margin-top: 20px;
 }
 /* ===== Contact end===== */
+/* ===== Map start===== */
+#map{
+	height: 410px;
+}
+.map-container{
+	position: relative;
+}
+.on-map-block{
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	background-color: rgba(0, 0, 0, .9);
+}
+.map-container:hover .on-map-block{
+	display: none;
+}
+.map-block-content{
+	display: block;
+	text-align: center;
+	margin-top: 167px;
+}
+.map-block-content span{
+	display: block;
+	margin-top: 28px;
+	color: rgba(255, 255, 255, .75);
+	font-size: 16px;
+}
+/* ===== Map end===== */
+
+/* ===== footer start ===== */
+.footer .foofter-logo{
+	display: block;
+}
+/* ===== foofter end ===== */
