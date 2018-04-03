@@ -50,6 +50,7 @@ textarea{
 	resize: vertical;
 }
 /* ===== Reset end ===== */
+
 /* ===== Default classes start */
 /* 
 	text color, text align, float, backgrounds colors, text transform
@@ -85,11 +86,13 @@ textarea{
 	float:right;
 }
 /* ===== Default classes end */
+
 /* ===== Guide section start ===== */
 .guide-section form .form-control + .form-control{
 	margin-top: 10px;
 }
 /* ===== Guide section end ===== */
+
 /* ===== Default component start ===== */
 /* 
 	Buttons, text, title, section, small-section header, footer,
@@ -115,32 +118,20 @@ textarea.form-control{
 .form-control:focus{
 	border-color: #111;
 }
-
 .container-fluid{
 	padding: 0 15px;
 }
-
 .container {
 	width: 1200px; /* 1200 - 30 = 1170 */
 	padding: 0 15px;
 	margin: auto;
 }
- 
-
 .default-section {
 	padding: 135px 0;
 }
-
-
-
-
-
-
 .small-section {
 	padding: 70px 0;
 }
-
-
 .title {
 	font-family: 'Dosis', sans-serif;
 	text-transform: uppercase;
@@ -220,30 +211,24 @@ blockquote span,
 	font-weight: 400;
 	cursor: pointer;
 }
-
 .btn.btn-default {
 	background-color: #e5e5e5;
 	color: #777;
 }
-
 .btn.btn-default:hover {
 	background-color: #d1d0d0;
 }
-
 .btn.btn-black {
 	background-color: #323232;
 	color: #fff;
 }
-
 .btn.btn-black:hover {
 	background-color: #000;
 }
-
 .btn.btn-xs {
 	padding: 7px 15px;
 	font-size: 11px;
 }
-
 /* ==== button end ==== */
 /* ===== Default component end ===== */
 
@@ -282,15 +267,6 @@ blockquote span,
 .header .header-nav li + li{
     margin-left: 35px;
 }
-/* .header::before{
-    content: '';
-	display: inline-block;
-	height: 100%;
-	width: 100%;
-	position: absolute;
-    vertical-align: middle;
-    margin-left: -4px;
-} */
 /* ===== Header end ===== */
 
 /* ===== Inner start ===== */
@@ -306,34 +282,40 @@ blockquote span,
 	letter-spacing: normal;
 	margin-top: 100px;
 }
-
 .inner{
 	background: url('../img/first-project-lp.jpg') no-repeat center/cover;
 	height: 100vh;
 	font-family: 'Dosis', sans-serif;
-}
-.home{
-	display: table;
-	width: 100%;
-	height: 100%;
 	text-align: center;
+	padding-top: 71px;
 }
-.home-text {
-    display: table-cell;
-	height: 100vh;
-	vertical-align: middle;	
-	text-align: center;	
+.inner::before {
+	content: ' ';
+	display: inline-block;
+	height: 100%;
+	vertical-align: middle;
+	margin-left: -4px;
 }
-.home-text h1{
-	margin-top: 0;
-	/* position: relative; */
-	letter-spacing: 52px;
-    text-transform: uppercase;
-    font-size: 30px;
-    font-weight: 400;    
-    color:rgba(255, 255, 255, .9);
+.inner-content {
+	display: inline-block;
+	vertical-align: middle;
 }
-
+.inner h1 {
+	font-family: 'Dosis';
+	font-size: 30px;
+	text-transform: uppercase;
+	color: rgba(255, 255, 255, .9);
+	margin-bottom: 100px;
+	letter-spacing: 1.7em;
+	text-indent: 1.7em;
+}
+.inner span {
+	display: block;
+	font-size: 19px;
+	color: rgba(255, 255, 255, .68);
+	font-weight: 300;
+	letter-spacing: 2px;
+}
 /* ===== Inner end ===== */
 
 /* ===== About Studio start ====*/
@@ -341,12 +323,6 @@ blockquote span,
 	overflow: hidden;
 	border-bottom: 1px solid #ececec;
 }
-/* .about:after{
-	content: '';
-	width: 100%;
-	display: block;
-	clear: both;
-} */
 .about-grid{
 	margin-top: 77px;
 }
@@ -357,17 +333,74 @@ blockquote span,
 }
 .team-item-img{
 	filter: grayscale(1);	
+	position: relative;
 }
 .team-item .team-item-skills{
 	top: 0;
-	opacity: 0;
-	position: absolute;
-	width: 100%;
-	height: 100%;
-	transition: all .2s linear;
+    opacity: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: black;
+    transition: all .2s linear;
+    padding: 40px;
+}
+.team-item .team-item-skills span {
+	font-size: 18px;
+	letter-spacing: .3em;
 }
 .team-item .team-item-img:hover .team-item-skills{
 	opacity: 1;
+}
+.team-item .team-item-skills p {
+	font-family: 'Open sana';
+	font-size: 13px;
+	font-weight: 400;
+	line-height: 1.6154;
+	color: rgba(255, 255, 255, .5);
+	margin: 25px 0;
+}
+.team-item-skills .skill-item span {
+	font-family: 'Open sans';
+	font-size: 11px;
+	color: rgba(255, 255, 255, .9);
+	text-transform: uppercase;
+	line-height: 3.45;
+	letter-spacing: .2em;
+	display: block;
+}
+.team-item .team-item-img:hover .branding {
+	width: 75%;
+}
+.team-item .team-item-img:hover .design {
+	width: 85%;
+}
+.progress-wrap .progress.design {
+	transition: width .6s ease-out .2s;
+}
+.team-item .team-item-img:hover .development {
+	width: 81%;
+}
+.progress-wrap .progress.development {
+	transition: width .6s ease-out .3s;
+}
+.team-item .team-item-img:hover .photography {
+	width: 79%;
+}
+.progress-wrap .progress.photography {
+	transition: width .5s ease-out .4s;
+}
+.team-item-skills .skill-item .progress-wrap {
+	width: 100%;
+	height: 12px;
+	background-color: rgba(255, 255, 255, .15); 
+}
+.progress-wrap .progress {
+	background-color: rgba(255, 255, 255, .75);
+	height: 12px;
+	width: 0%;
+	overflow: hidden;
+	transition: width .5s ease-out;
 }
 .team-item-info{
 	display: table;
@@ -472,6 +505,7 @@ blockquote span,
 	cursor: pointer;
 	}
 /* ---- Smal section end */
+
 /* ---- Portfolio ---- */
 .portfolio{
 	overflow: hidden;
@@ -501,32 +535,26 @@ blockquote span,
 	font-family: 'Dosis';
 	color: #a4a4a4;
 }
-
 .portfolio-image{
 	filter: grayscale(1);
 }
-
 .portfolio-image:hover{
 	filter: grayscale(0);
 	transition: all .2s linear;
 }
-
 .portfolio-item{
 	float: left;
 	width: 33.333333%;
 	padding: 4px;
 }
-
 .portfolio-item img{
 	width: 100%;
 	height: 410px;
 }
-
 .portfolio-nav{
 	text-align: center;
 	padding: 85px 0 51px 0;
 }
-
 .tabs-portfolio-nav{
 	position: relative;
 	left: 21em;
@@ -536,7 +564,6 @@ blockquote span,
 	text-transform: uppercase;
 	letter-spacing: 6px;
 }
-
 .portfolio-nav:after{	
 	content: '';
 	width: 100%;
@@ -544,6 +571,7 @@ blockquote span,
 	clear: both;	
 }
 /* ---- Portfolio end ---- */
+
 /* banner start */
 .banner-button-text{
 	font-family: 'Open sans';
@@ -551,17 +579,16 @@ blockquote span,
 	padding: 12px 10px;
 	font-size: 14px;
 	font-weight: 200;	
-
 }
 .banner-button{
 	text-align: center;	
 }
 .banner-button:hover {
 	cursor: pointer;
-	}
+}
 /* / banner end */
-/* ==== why choose us start=====*/
 
+/* ==== why choose us start=====*/
 .benefits-item{
 	text-align: center;
 }
@@ -633,6 +660,7 @@ blockquote span,
 	margin-top: 25px;
 }
 /* ==== All news end ====*/
+
 /* ===== reviews start ===== */
 .reviews-carousel{
 	padding: 135px 0;
@@ -747,8 +775,8 @@ blockquote span,
 .form-info{
 	margin-top: 19px;
 }
-
 /* ===== stay informed end ===== */
+
 /* ===== Contact start===== */
 .contacts{
 	overflow: hidden;
@@ -805,6 +833,7 @@ blockquote span,
 	margin-top: 20px;
 }
 /* ===== Contact end===== */
+
 /* ===== Map start===== */
 #map{
 	height: 410px;
@@ -862,5 +891,13 @@ blockquote span,
 	font-family: 'Dosis';
 	font-weight: 500;
 	margin-bottom: 15px;
+}
+.arrow-top { 
+	font-size: 50px;
+	color: #c6c6c6;
+	position: fixed;
+	right: 30px;
+	bottom: 30px;
+	cursor: pointer;
 }
 /* ===== foofter end ===== */
