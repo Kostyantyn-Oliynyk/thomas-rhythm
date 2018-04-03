@@ -115,22 +115,7 @@ textarea.form-control{
 .form-control:focus{
 	border-color: #111;
 }
-.header{
-	background: transparent;	
-	width: 100%;
-	position: fixed;
-	font-family: 'Dosis', sans-serif ;
-	z-index: 99;
-}
-/* .header::before{
-    content: '';
-	display: inline-block;
-	height: 100%;
-	width: 100%;
-	position: absolute;
-    vertical-align: middle;
-    margin-left: -4px;
-} */
+
 .container-fluid{
 	padding: 0 15px;
 }
@@ -141,77 +126,14 @@ textarea.form-control{
 	margin: auto;
 }
  
-.header .header-nav{
-	float: right;
-	font-family: 'Open Sans';
-	line-height: 23px;
-    font-size: 11px;
-	font-weight: 300;
-	color: rgba(255, 255, 255, .75);
-	letter-spacing: 5px;
-	text-transform: uppercase;
-	padding: 27px 0;
-}
-.header .logo{
-    float: left;
-	padding: 27px 0 ;
-	opacity: .9;
-}
-.header .header-nav li{
-    float: left;      
-}
-.header .header-nav li + li{
-    margin-left: 35px;
-}
+
 .default-section {
 	padding: 135px 0;
 }
 
-.home{
-	display: table;
-	width: 100%;
-	height: 100%;
-	text-align: center;
-}
-.home-text {
-    display: table-cell;
-	height: 100vh;
-	vertical-align: middle;	
-	text-align: center;	
-}
-.home-text h1{
-	margin-top: 0;
-	/* position: relative; */
-	letter-spacing: 52px;
-    text-transform: uppercase;
-    font-size: 30px;
-    font-weight: 400;    
-    color:rgba(255, 255, 255, .9);
-}
-.home-text h1 span{
-	display: inline-block;
-	margin-top: 0;
-	font-family: 'Open Sans';
-	text-transform: none;
-    font-size: 19px;
-    font-weight: 300;
-    line-height: 1.2;
-	color:rgba(255, 255, 255, .68);
-	letter-spacing: normal;
-	margin-top: 100px;
-}
 
-.inner{
-	background: url('../img/first-project-lp.jpg') no-repeat center/cover;
-	height: 100vh;
-	font-family: 'Dosis', sans-serif;
-}
 
-.header h1 span{
-    display: block;
-    font-size: 19px;
-    margin-bottom: 90px;
-}
+
 
 
 .small-section {
@@ -279,6 +201,12 @@ blockquote span,
 	color: #000;
 	background-color: #fff;
 }
+.rhomb-icon.transparent-icon{
+	background-color: transparent;
+	border: 1px solid black;
+	color: #111;
+	line-height: 21px;
+}
 .form-info .fa{
 	font-size: 12px;
 }
@@ -318,7 +246,97 @@ blockquote span,
 
 /* ==== button end ==== */
 /* ===== Default component end ===== */
-/* ===== About Studio */
+
+/* ===== Header start ===== */
+.header{
+	background: transparent;	
+	width: 100%;
+	position: fixed;
+	font-family: 'Dosis', sans-serif ;
+	z-index: 99;
+}
+.header h1 span{
+    display: block;
+    font-size: 19px;
+    margin-bottom: 90px;
+}
+.header .header-nav{
+	float: right;
+	font-family: 'Open Sans';
+	line-height: 23px;
+    font-size: 11px;
+	font-weight: 300;
+	color: rgba(255, 255, 255, .75);
+	letter-spacing: 5px;
+	text-transform: uppercase;
+	padding: 27px 0;
+}
+.header .logo{
+    float: left;
+	padding: 27px 0 ;
+	opacity: .9;
+}
+.header .header-nav li{
+    float: left;      
+}
+.header .header-nav li + li{
+    margin-left: 35px;
+}
+/* .header::before{
+    content: '';
+	display: inline-block;
+	height: 100%;
+	width: 100%;
+	position: absolute;
+    vertical-align: middle;
+    margin-left: -4px;
+} */
+/* ===== Header end ===== */
+
+/* ===== Inner start ===== */
+.home-text h1 span{
+	display: inline-block;
+	margin-top: 0;
+	font-family: 'Open Sans';
+	text-transform: none;
+    font-size: 19px;
+    font-weight: 300;
+    line-height: 1.2;
+	color:rgba(255, 255, 255, .68);
+	letter-spacing: normal;
+	margin-top: 100px;
+}
+
+.inner{
+	background: url('../img/first-project-lp.jpg') no-repeat center/cover;
+	height: 100vh;
+	font-family: 'Dosis', sans-serif;
+}
+.home{
+	display: table;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+}
+.home-text {
+    display: table-cell;
+	height: 100vh;
+	vertical-align: middle;	
+	text-align: center;	
+}
+.home-text h1{
+	margin-top: 0;
+	/* position: relative; */
+	letter-spacing: 52px;
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: 400;    
+    color:rgba(255, 255, 255, .9);
+}
+
+/* ===== Inner end ===== */
+
+/* ===== About Studio start ====*/
 .about{
 	overflow: hidden;
 	border-bottom: 1px solid #ececec;
@@ -821,5 +839,28 @@ blockquote span,
 /* ===== footer start ===== */
 .footer .foofter-logo{
 	display: block;
+}
+.social-link{
+	display: inline-block;
+	margin-top: 24px;
+	margin-bottom: 110px;
+}
+.social-link li {	
+	float: left;
+	margin: 0 13px;
+}
+.text-logo .form-info{
+	display: inherit;
+	color: #999;
+	font-size: 12px;
+}
+.text-logo .copyrait{
+	text-transform: uppercase;
+	color: #000;
+	font-size: 12px;
+	letter-spacing: 7px;
+	font-family: 'Dosis';
+	font-weight: 500;
+	margin-bottom: 15px;
 }
 /* ===== foofter end ===== */
