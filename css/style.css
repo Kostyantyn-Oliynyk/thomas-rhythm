@@ -496,14 +496,10 @@ blockquote span,
 	float: right;
 	margin-top: -102px;
 }
-.button-style{
+.exclusive-services .btn{
 	width: 169px;
-	text-align: center;
-	letter-spacing: 4px;
+	letter-spacing: 3px;
 }
-.button-style:hover {
-	cursor: pointer;
-	}
 /* ---- Smal section end */
 
 /* ---- Portfolio ---- */
@@ -511,58 +507,52 @@ blockquote span,
 	overflow: hidden;
 	padding-bottom: 0;	
 }
-.portfolio-title{
+.portfolio .title{
 	font-weight: 500;
-	font-size: 18px;
 	letter-spacing: 10px;
 	margin-bottom: 80px;
 } 
-
-.portfolio-top-text{
-	font-size: 15px;
-	line-height: 26px;
-	padding: 0 209px;
+.portfolio .default-text{
+	max-width: 760px;
+	margin: auto;
 	text-align: center;
 	color: #777;
 }
-.tabs-portfolio-nav .tab-name:hover{
+.portfolio .tabs-portfolio-nav a:hover{
 	color: #000;
 }
+#tabs-portfolio  .tabs-portfolio-nav .ui-state-active{
+	color: #111;
+}
 #tabs-portfolio .tabs-portfolio-nav li{
-	float: left;
-	width: 13%;
-	text-align: center;
+	display: inline-block;
+	margin: 0 34px;
 	font-family: 'Dosis';
 	color: #a4a4a4;
 }
-.portfolio-image{
-	filter: grayscale(1);
-}
-.portfolio-image:hover{
-	filter: grayscale(0);
-	transition: all .2s linear;
+.portfolio-item img{
+	width: 100%;
 }
 .portfolio-item{
+	filter: grayscale(1);
 	float: left;
 	width: 33.333333%;
 	padding: 4px;
 }
-.portfolio-item img{
-	width: 100%;
-	height: 410px;
+.portfolio-item:hover{
+	filter: grayscale(0);
+	transition: all .2s linear;
 }
-.portfolio-nav{
-	text-align: center;
-	padding: 85px 0 51px 0;
+.portfolio .portfolio-tabs-wrapper{
+	padding: 85px 0 51px 0;	
 }
 .tabs-portfolio-nav{
-	position: relative;
-	left: 21em;
 	font-family: 'Dosis';
 	font-size: 13px;
 	font-weight: 400;
 	text-transform: uppercase;
 	letter-spacing: 6px;
+	margin-bottom: 51px;
 }
 .portfolio-nav:after{	
 	content: '';
@@ -572,24 +562,19 @@ blockquote span,
 }
 /* ---- Portfolio end ---- */
 
-/* banner start */
-.banner-button-text{
+/* like-creative-works start */
+.like-creative-works .btn{
 	font-family: 'Open sans';
 	letter-spacing: 3px;
-	padding: 12px 10px;
 	font-size: 14px;
-	font-weight: 200;	
+	font-weight: 200;
+	margin-top: 25px;
+	width: 214px;
 }
-.banner-button{
-	text-align: center;	
-}
-.banner-button:hover {
-	cursor: pointer;
-}
-/* / banner end */
+/* / like-creative-works end */
 
 /* ==== why choose us start=====*/
-.benefits-item{
+.benefits-item-img, .benefits-item-title{
 	text-align: center;
 }
 .benefits-item-title{
@@ -601,9 +586,7 @@ blockquote span,
 	padding: 35px 0;
 	letter-spacing: 6px;
 }
-.benefits-item-text{
-	line-height: 26px;
-    text-align: justify;
+.benefits-item .default-text{
     font-family: 'Open sans';
     font-weight: 200;
     font-size: 14px;
@@ -645,7 +628,6 @@ blockquote span,
 	letter-spacing: 3px;
 }
 .news-text p{
-	text-align: justify;
 	width: 100%;
 	display: inline-block;
 }
@@ -656,7 +638,7 @@ blockquote span,
 	padding: 17px 0 27px 0;
 	letter-spacing: 5px;
 }
-.news-button{
+.latest-news .btn{
 	margin-top: 25px;
 }
 /* ==== All news end ====*/
