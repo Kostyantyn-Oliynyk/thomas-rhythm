@@ -722,7 +722,7 @@
 						<div class="title section-title-lite title-white">
 							<span>what people say?</span>
 						</div>
-						<p> Phasellus luctus commodo ullamcorper a posuere rhoncus commodo elit. Aenean congue,
+						<p class="default-text"> Phasellus luctus commodo ullamcorper a posuere rhoncus commodo elit. Aenean congue,
 							risus utaliquam dapibus. Thanks!</p>
 						<span class="review-autor">- Jon Doe. Doodle inc. </span>
 					</div>
@@ -735,7 +735,7 @@
 						<div class="title section-title-lite title-white">
 							<span>what people say?</span>
 						</div>
-						<p> Phasellus luctus commodo ullamcorper a posuere rhoncus commodo elit. Aenean congue,
+						<p class="default-text"> Phasellus luctus commodo ullamcorper a posuere rhoncus commodo elit. Aenean congue,
 								risus utaliquam dapibus. Thanks!</p>
 						<span class="review-autor">- Jon Doe. Doodle inc. </span>
 					</div>
@@ -748,7 +748,7 @@
 						<div class="title section-title-lite title-white">
 							<span>what people say?</span>
 						</div>
-						<p> Phasellus luctus commodo ullamcorper a posuere rhoncus commodo elit. Aenean congue,
+						<p class="default-text"> Phasellus luctus commodo ullamcorper a posuere rhoncus commodo elit. Aenean congue,
 								risus utaliquam dapibus. Thanks!</p>
 						<span class="review-autor">- Jon Doe. Doodle inc. </span>
 					</div>
@@ -785,12 +785,12 @@
 								<span>John Doe | 10 December</span>
 							</div>
 							<!-- / name-date -->
-							<div class="news-text">
+							<div class="default-text">
 								<p>
 									Maecenas  volutpat, diam enim sagittis quam, id porta quam. Sed id dolor consectetur fermentum nibh volutpat, accumsan purus. 
 								</p>
 							</div>
-							<!-- / news-text -->
+							<!-- / default-text -->
 							<button class="btn btn-default"><a href="">Read More ></a>
 							</button>
 							<!-- / button -->
@@ -816,12 +816,12 @@
 								<span>John Doe | 9 December</span>
 							</div>
 							<!-- / name-date -->
-							<div class="news-text">
+							<div class="default-text">
 								<p>
 									Maecenas  volutpat, diam enim sagittis quam, id porta quam. Sed id dolor consectetur fermentum nibh volutpat, accumsan purus. 							
 								</p>									
 							</div>
-							<!-- / news-text -->							
+							<!-- / default-text -->							
 							<button class="btn btn-default"><a href="">Read More ></a>
 							</button>	
 							<!-- / button -->
@@ -847,12 +847,12 @@
 								<span>John Doe | 7 December</span>
 							</div>
 							<!-- / name-date -->
-							<div class="news-text">
+							<div class="default-text">
 								<p>
 									Maecenas  volutpat, diam enim sagittis quam, id porta quam. Sed id dolor consectetur fermentum nibh volutpat, accumsan purus. 
 								</p>
 							</div>
-							<!-- / news-text -->
+							<!-- / default-text -->
 							<button class="btn btn-default"><a href="">Read More ></a>	
 							</button>
 							<!-- / button -->
@@ -944,20 +944,29 @@
 						</div>
 						<!-- / contact-items-wrapper -->
 						<form class="contact-form">
-							<div class="form-col">
+							<div class="form-row">
+								<div class="form-col">
 								<input type="text" name="user-name" id="user-name" class="form-control" placeholder="NAME">
 								<input type="text" name="user-email" id="user-email" class="form-control" placeholder="EMAIL">
+								</div>
+								<!-- / form col -->
+								<div class="form-col">
+									<textarea name="user-message" id="user-message" class="form-control" placeholder="MESSAGE"></textarea>
+								</div>
+								<!-- / form col -->
+							</div>	
+							<!-- / form-row  -->
+							<div class="form-submit">
+								<div class="form-info pull-left">					 
+									<span> <i class="fa fa-info-circle"></i>All the fields are required
+									</span>	
+								</div>
+								<!-- / form info -->
+								<button type="submit" class="btn btn-black pull-right">
+									Submit Message
+								</button>
 							</div>
-							<!-- / form col -->
-							<div class="form-col">
-								<textarea name="user-message" id="user-message" class="form-control" placeholder="MESSAGE"></textarea>
-							</div>
-							<!-- / form col -->
-							<div class="form-info pull-left">					 
-									<span> <i class="fa fa-info-circle"></i>All the fields are required</span>	
-							</div>
-							<!-- / form info -->
-							<button type="submit" class="btn btn-black pull-right">Submit Message</button>
+							
 						</form>							
 					</div>	
 					<!-- / col8  -->

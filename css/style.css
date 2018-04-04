@@ -105,7 +105,6 @@ textarea{
 	padding: 0 13px;
 	font-size: 12px;
 	height: 36px;
-	font-style: Cookie;
 	color: #777;
 	font-weight: 400;
 	text-transform: uppercase;
@@ -627,10 +626,6 @@ blockquote span,
 	font-family: 'Dosis';
 	letter-spacing: 3px;
 }
-.news-text p{
-	width: 100%;
-	display: inline-block;
-}
 .news-name-date{
 	font-family: 'Dosis';
 	text-transform: uppercase;
@@ -653,21 +648,17 @@ blockquote span,
 	margin-bottom: 23px;
 	color: #fff;
 }
-.slide-content{
-	width: 732px;
-	margin: 0 31%;
-}
 .slide-content .title{
 	letter-spacing: 7px;
 }
 .slide-content p{
+	max-width: 732px;
+	margin: auto;
 	color: rgba(255, 255, 255, .75);
 	font-size: 18px;
-	line-height: 30px;
-	font-weight: 300;
-	text-align: center;
 	font-family: 'Open sans';
 	margin-top: 44px;
+
 }
 .slide-content .review-autor{
 	font-size: 11px;
@@ -749,6 +740,7 @@ blockquote span,
 }
 .form-info i{
 	font-size: 12px;
+	margin-right: 3px;
 }
 .form-info span{
 	color: #aaaaaa;
@@ -797,6 +789,9 @@ blockquote span,
 .contact-form {
 	margin-left:-10px;	
 	margin-right: 25px;
+}
+.form-row{
+	margin: 0 -5px;
 	overflow: hidden;
 }
 .contact-form .form-col{
@@ -809,9 +804,8 @@ blockquote span,
 }
 .contact-form .form-info{
 	line-height: 26px;
-	margin-top: 20px;
 }
-.contact-form .btn{
+.form-submit{
 	margin-top: 20px;
 }
 /* ===== Contact end===== */
