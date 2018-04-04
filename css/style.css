@@ -877,3 +877,12 @@ blockquote span,
 	cursor: pointer;
 }
 /* ===== foofter end ===== */
+
+/* ===== Media ===== */
+@media(max-width:1200px){
+	/* Styles for devices <1200px */
+	
+}
+@media(max-width:991px){
+	/* Styles for devices <991px */
+}
