@@ -121,7 +121,7 @@ textarea.form-control{
 	padding: 0 15px;
 }
 .container {
-	width: 1200px; /* 1200 - 30 = 1170 */
+	max-width: 1200px; /* 1200 - 30 = 1170 */
 	padding: 0 15px;
 	margin: auto;
 }
@@ -299,7 +299,7 @@ blockquote span,
 	display: inline-block;
 	vertical-align: middle;
 }
-.inner h1 {
+.inner .title {
 	font-family: 'Dosis';
 	font-size: 30px;
 	text-transform: uppercase;
@@ -315,6 +315,14 @@ blockquote span,
 	font-weight: 300;
 	letter-spacing: 2px;
 }
+@media (max-width: 991px) {
+	.inner .title{
+		letter-spacing:.9em;
+		text-indent:.7em;
+        margin-bottom:50px;
+	}
+}
+
 /* ===== Inner end ===== */
 
 /* ===== About Studio start ====*/
@@ -322,13 +330,23 @@ blockquote span,
 	overflow: hidden;
 	border-bottom: 1px solid #ececec;
 }
+.about:after{
+    content: '';
+    width: 100%;
+    display: block;
+    clear: both;
+}
 .about-grid{
 	margin-top: 77px;
+}
+.about .row{
+    overflow: hidden;
 }
 .team-wraper{
 	position: relative;
 	width: 100%;
-	top: 108px;
+	overflow: hidden;
+	margin-top: 125px;
 }
 .team-item-img{
 	filter: grayscale(1);	
@@ -405,10 +423,11 @@ blockquote span,
 	display: table;
 	width: 100%;
 	text-align: center;
+    margin-top: 30px;
 }
 .team-item-name{
 	display: inline-block;
-	margin-top: 30px;
+
 	margin-bottom: 16px;
 	font-family: 'Dosis';
 	letter-spacing: 6px;
@@ -427,6 +446,22 @@ blockquote span,
     line-height: 1.2;
 	color:#777;
 	letter-spacing: 5px;
+}
+@media (max-width: 991px) {
+    .about blockquote{
+        margin-bottom: 20px;
+    }
+    .team-item-name{
+        font-size: 13px;
+    }
+    .team-item-role{
+        font-size: 10px;
+    }
+}
+@media (max-width: 576px) {
+    .about .default-text{
+        margin-bottom: 20px;
+    }
 }
 /* ---- About Studio end ---- */
 /* ---- Services ---- */
@@ -465,6 +500,29 @@ blockquote span,
 #tabs .tabs-nav .ui-state-active{
 	color: #111;
 }
+@media (max-width: 991px) {
+    #tabs .tabs-nav li span{
+        font-size:10px;
+		letter-spacing:3px;
+		margin-bottom: 40px;
+    }
+    blockquote{
+        font-size: 22px;
+		margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 576px) {
+	.services .default-text{
+		margin-bottom: 20px;
+	}
+	#tabs .tabs-nav li .icon{
+		font-size: 45px;
+	}
+	#tabs .tabs-nav li span{
+		letter-spacing: 2px;
+	}
+}
 /* ---- Services end ---- */
 /* ---- Smal section */
 .exclusive-services::after{
@@ -473,23 +531,17 @@ blockquote span,
 	display: block;
 	clear: both;
 }
-.exclusive-services-title{
+.exclusive-services .title{
 	font-weight: 300;
 	letter-spacing: 5px;
 	margin-top: 70px;
 }
-.exclusive-services-text{
+.exclusive-services .default-text{
 	color: rgba(255, 255, 255, .7);
 	font-family: 'Open sans';
-	font-size: 15px;
 	letter-spacing: normal;
-	display: block;
 	line-height: 26px;
-	float: left;
 	margin:28px 0 40px 0 ;
-}
-.exclusive-services-text span{
-	display: block;
 }
 .image-section{
 	float: right;
@@ -498,6 +550,12 @@ blockquote span,
 .exclusive-services .btn{
 	width: 169px;
 	letter-spacing: 3px;
+}
+
+@media (max-width: 991px) {
+	.exclusive-services{
+		text-align: center;
+	}
 }
 /* ---- Smal section end */
 
@@ -532,10 +590,13 @@ blockquote span,
 .portfolio-item img{
 	width: 100%;
 }
+.portflio-content{
+	margin: 0 -4px;
+}
 .portfolio-item{
 	filter: grayscale(1);
 	float: left;
-	width: 33.333333%;
+	width: 33.3333%;
 	padding: 4px;
 }
 .portfolio-item:hover{
@@ -558,6 +619,29 @@ blockquote span,
 	width: 100%;
 	display: block;
 	clear: both;	
+}
+@media (max-width: 991px) {
+	.portfolio-item{
+		width:50%;
+	}
+}
+@media (max-width: 576px) {
+	.portfolio-item{
+		width:100%;
+	}
+	#tabs-portfolio .tabs-portfolio-nav li{
+		margin: 0 25px;
+	}
+	.tabs-portfolio-nav{
+		font-size:13px;
+		letter-spacing: 2px;
+	}
+	.portfolio .title{
+		margin-bottom:40px;
+	}
+	.portfolio .portfolio-tabs-wrapper{
+		padding:40px 0;
+	}
 }
 /* ---- Portfolio end ---- */
 
@@ -597,6 +681,16 @@ blockquote span,
 	display: block;
 	clear: both;
 	margin-bottom: 83px;
+}
+
+@media (max-width: 991px) {
+	.benefits-item {
+		text-align: center;
+		margin-bottom: 20px;
+	}
+	.default-section{
+		padding:70px 0;
+	}
 }
 /* ==== why choose us end ====*/
 
@@ -726,6 +820,17 @@ blockquote span,
 .slick-arrow.slick-next .carousel-button .fa{
 	left: 16px;
     top: 17px;
+}
+
+@media (max-width: 768px) {
+	.slide-content p{
+		font-size: 16px;
+	}
+	.slick-arrow .carousel-button{
+		width:40px;
+		height:40px;
+		margin-left: -20px;
+	}
 }
 /* ===== reviews end ===== */
 
@@ -878,11 +983,22 @@ blockquote span,
 }
 /* ===== foofter end ===== */
 
-/* ===== Media ===== */
+/*  Media  */
+/*  Десктопи і ноутбуки 1300 > */
+
+/* Ноутбуки, нетбуки і планшети в альбомній орієнтації 992px - 1200px */
 @media(max-width:1200px){
-	/* Styles for devices <1200px */
 	
 }
+/* Планшети 7 в портретній орієнтації 768px-991 */
 @media(max-width:991px){
-	/* Styles for devices <991px */
+
+}
+/* Планшети 7 в портреній орієнтації і мобільні в альбомній 577 - 767*/
+@media(max-width:767px){
+
+}
+/* Мобільні телефони в портретній і альбомній орієнтації */
+@media(max-width:576px){
+
 }
