@@ -487,11 +487,56 @@ blockquote span,
     .team-item-role{
         font-size: 10px;
     }
+	.team-item .team-item-skills p{
+		margin: 15px 0;
+	}
+	.team-item .team-item-skills{
+		padding: 30px;
+	}
+}
+@media (max-width: 768px) {
+	.about .default-text{
+		margin-bottom: 10px;
+	}
+	.team-item-skills .skill-item span{
+		font-size: 9px;
+		line-height: 2.45;
+	}
+	.team-item .team-item-skills{
+		padding:10px;
+	}
+	.team-item .team-item-skills p{
+		margin: 10px 0;
+		font-size: 8px;
+	}
+	.progress-wrap .progress{
+		height:8px;
+	}
+	.team-item-skills .skill-item .progress-wrap{
+		line-height: 9px;
+	}
 }
 @media (max-width: 576px) {
     .about .default-text{
         margin-bottom: 20px;
     }
+	.team-item-skills .skill-item span{
+		font-size: 15px;
+		line-height: 2.45;
+	}
+	.team-item .team-item-skills{
+		padding:30px;
+	}
+	.team-item .team-item-skills p{
+		margin: 25px 0;
+		font-size: 16px;
+	}
+	.progress-wrap .progress{
+		height:13px;
+	}
+	.team-item-skills .skill-item .progress-wrap{
+		line-height: 13px;
+	}
 }
 @media (max-width: 320px) {
 	.about blockquote{
@@ -503,17 +548,16 @@ blockquote span,
 	.team-item-role{
 		font-size: 10px;
 	}
-	.team-item-info{
-		margin-top: ;
-	}
 	.team-item{
 		margin-bottom: 20px;
 	}
 	.team-item-skills .skill-item span{
-		line-height: 2.85;
+		font-size: 12px;
+		line-height: 2.45;
 	}
 	.team-item .team-item-skills p{
-		margin: 15px 0;
+		margin: 10px 0;
+		font-size: 13px;
 	}
 	.team-item .team-item-skills{
 		padding: 30px;
@@ -584,15 +628,18 @@ blockquote span,
 	}
 }
 @media (max-width: 320px){
+	#tabs .tabs-nav li .icon-name{
+		display: none;
+	}
 	#tabs .tabs-nav li .icon{
-		font-size: 35px;
+		font-size: 20px;
 	}
 	#tabs .tabs-nav li span{
 		margin-bottom: 20px;
 		font-size: 0;
 	}
 }
-	/* ---- Services end ---- */
+/* ---- Services end ---- */
 /* ---- Smal section */
 .exclusive-services::after{
 	content: '';
@@ -947,10 +994,9 @@ blockquote span,
 		display: none;
 	}
 }
-	/* ===== reviews end ===== */
+/* ===== reviews end ===== */
 
-/* ===== stay informed start ===== */
-
+/* ===== subscribe start ===== */
 .subscribe form .form-control{
 	max-width: 291px;
 	letter-spacing: 2px;
@@ -969,7 +1015,13 @@ blockquote span,
 .form-info{
 	margin-top: 19px;
 }
-/* ===== stay informed end ===== */
+
+@media (max-width: 320px) {
+	.subscribe form .form-control{
+		margin-bottom: 10px;
+	}
+}
+/* ===== Subscribe end ===== */
 
 /* ===== Contact start===== */
 .contacts{
@@ -1035,11 +1087,25 @@ blockquote span,
 	}
 	.contact-form .form-info{
 		line-height:20px;
+		margin-bottom: 10px;
+	}
+	.contact-form .pull-left{
+		float: none;
+	}
+	.contact-form .pull-right{
+		float: none;
+	}
+	.contact-form{
+		margin-left: 0;
+	}
+	.form-submit{
+		margin-top: 0;
 	}
 	.form-info{
 		margin-top: 11px;
 	}
 	.contact-form .btn{
+		clear: right;
 		font-size: 10px;
 		padding: 12px 16px;
 	}
@@ -1048,6 +1114,7 @@ blockquote span,
 	}
 	.contact-items-wrapper{
 		margin-bottom: 40px;
+		margin-top: 20px;
 	}
 }
 /* ===== Contact end===== */

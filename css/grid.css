@@ -51,10 +51,11 @@
 .col-12{
 	width: 100%;
 }
-/* lg - large devices       <1200*/
-/* md - medium devices      <991*/
-/* sm - small devices       <768*/
-/* xs - extra small devices <568*/
+/* lg  - large devices       <1200*/
+/* md  - medium devices      <991*/
+/* sm  - small devices       <768*/
+/* xs  - extra small devices <568*/
+/* mb - mobile small devise <320px*/
 
 /* large devices */
 @media (max-width: 1200px) {
@@ -223,5 +224,55 @@
     .d-xs-none{
         display: none;
     }
+}
+/* Mobile device*/
+@media(max-width: 320px) {
+	.col-mb-1 {
+		width: 8.33333333%;
+	}
+
+	.col-mb-2 {
+		width: 16.66666667%;
+	}
+
+	.col-mb-3 {
+		width: 25%;
+	}
+
+	.col-mb-4 {
+		width: 33.33333333%;
+	}
+
+	.col-mb-5 {
+		width: 41.66666667%;
+	}
+
+	.col-mb-6 {
+		width: 50%;
+	}
+
+	.col-mb-7 {
+		width: 58.33333333%;
+	}
+
+	.col-mb-8 {
+		width: 66.66666667%;
+	}
+
+	.col-mb-9 {
+		width: 75%;
+	}
+
+	.col-mb-10 {
+		width: 83.33333333%;
+	}
+
+	.col-mb-11 {
+		width: 91.66666667%;
+	}
+
+	.col-mb-12 {
+		width: 100%;
+	}
 }
 /* --- / Grid layout--- */
